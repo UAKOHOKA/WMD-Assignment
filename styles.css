@@ -1,76 +1,49 @@
+/* Basic page style */
 body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f5f0e6;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6; 
+    font-family: Arial, sans-serif;
+    background-color: #e8dfd1;
+    color: #333;
 }
 
-header {
-  background-color: #6b2d2d;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}    
-
-header h1 {
-    margin: 0;
+/* Add small shadow to navbar */
+.navbar {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
+/* Hero section box */
+.hero-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+/* Custom button color */
+.btn-dark {
+    background-color: #6b2d2d;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #8a3c3c;
+}
+
+.custom-btn{
+    background-color: #333;
     color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.custom-btn:hover{
+    background-color: #4a1f14; /*Darker red when hovering*/
+    color: white;
 }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-
+/* Footer text size */
 footer {
     background-color: #6b2d2d;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
-    margin-top: 50px;
-}
-
-p {
-    font-size: 1.1em;
-}
-
-a {
- color: #333;
- text-decoration: none;
-}
-
-a:hover {
- text-decoration: underline;
-}
-
-main a[href^="mailto"]{
- color:#6b2d2d;
- font-weight: bold;
-}
-
-.custom-btn{
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-}
-
-.custom-btn:hover{
-    background-color: #4a1f14; /*Darker red when hovering */
-    color: white;
 }
