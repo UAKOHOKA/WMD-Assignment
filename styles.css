@@ -1,11 +1,41 @@
+/* CSS VRIABLES */
+:root {
+    --herero-red: #6b2d2d;
+    --herero-dark: #4a1f14;
+    --herero-bg: #e8dfd1;
+    --herero-light: #f9f3f0;
+    --herero-white: #ffffff;
+}
+
 /* Basic page style */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8dfd1;
+    background-color: var(--herero-bg);
     color: #333;
 }
+/* heading style*/
+h1, h2, h3 {
+    font-size: georgia, serif;
+}
+.heading-herero {
+    color: var(--herero-red);
+}
 
-/* Add small shadow to navbar */
+/* Add small color and shadow transition to navbar */
+nav .navbar {
+    font-size: 0.95;
+    border-radius: 5px;
+    transition: background-clor 0.3s ease;
+}
+nav .nav-link.active {
+    background-color: #6b2d2d;
+    color: white !important;
+    padding: 5px 10px;
+}
+nav .nav-link:hover {
+    background-color: rgba(107, 45, 45, 0.2);
+    color: white !important;
+}
 .navbar {
     /* horizontal | vertical | blur | color */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
@@ -13,19 +43,20 @@ body {
 
 /* Hero section box */
 .hero-section {
-    background-color: white;
+    background-color: var(--herero-white);
     border-radius: 10px;
     padding: 40px;
+    border-bottom: 3px solid var(--herero-red);
 }
 
 /* Custom button color */
 .btn-dark {
-    background-color: #6b2d2d;
+    background-color: var(--herero-red);
     border: none;
 }
 
 .btn-dark:hover {
-    background-color: #8a3c3c;
+    background-color: var(--herero-dark);
 }
 
 .custom-btn{
@@ -33,35 +64,110 @@ body {
     color: white;
     border: none;
     padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .custom-btn:hover{
-    background-color: #4a1f14; /*Darker red when hovering*/
+    background-color: var(--herero-dark); /*Darker red when hovering*/
     color: white;
+}
+
+/* hero text container */
+#hero-text {
+    padding: 2rem 0;
 }
 
 /* Footer text size */
 footer {
-    background-color: #6b2d2d;
+    background-color: var(--herero-red);
     color: white;
     text-align: center;
     padding: 15px;
     width: 100%;
+    border-top: 3px solid var(--herero-dark);
+}
+footer p::before {
+    content: "🌍";
 }
 
 /* Styling the table */
 table {
-    width: 40%;
+    width: 60%;
     border-collapse: collapse;
-    margin: 1opx auto;
+    margin: 10px auto;
 }
 
 th, td {
     border: 1px solid #333;
-    padding: 5px;
+    padding: 8px 12px;
     text-align: center;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: var(--herero-red);
 }
+tr:nth-child(even) {
+    background-color: #f2e8e7;
+}
+tr:hover {
+    background-color: #ddd;
+}
+
+/* card hover effect */
+.custom-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ANIMATION */
+@keyframes fadeInUp {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Apply animation */
+.fade-in {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* MEDIA QUERY */
+     /* tablet */
+    @media (max-width: 768px) {
+     .hero-section {
+        text-align: center;
+        padding: 20px;
+     }
+     .hero-section img {
+        margin-top: 1.5rem;
+        width: 100%;
+     }
+     h1 {
+      font-size: 1.8rem;
+     }
+     table {
+        width: 100%;
+        font-size: 0.85;
+     }
+    }
+    /* Phone */
+    @media (max-width: 480px) {
+      .nav-brand {
+        font-size: 1rem;
+      }  
+      body {
+        font-size: 0.9rem;
+      }
+      footer p {
+        font-size: 0.8rem;
+      }
+    }
