@@ -171,3 +171,17 @@ tr:hover {
         font-size: 0.8rem;
       }
     }
+
+/* contact form*/
+.contact-card {
+    background-color: var(--herero-red);
+    border-radius: 10px;
+    border: none;
+}    
+.contact-card .form-control {
+    background-color: #888888;
+    border: none;
+}
+.contact-card .form-label {
+    color: white;
+}

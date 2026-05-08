@@ -34,15 +34,18 @@
     </header>
 
     <main class="container my-5">
-       <div class="row">
-          <div class="col-md-5">
-           <h2 class="heading-herero">About Me</h2>
+       <div class="row align-items-start">
+
+          <section class="col-md-5">
+           <h1 class="fw-bold heading-herero">About Me</h1>
            <p>My name is Uakohoka Karijama Tjiriange, and I am a student from Botswana school of Business Science.</p>
            <p>I created this website to ensure that the <strong>herero language</strong> and our beautiful culture are never forgotten by future generations</p>
            <p>If you are interested in contributing or want to ask questions feel free to contact me at <a href="mailto:bida25-467@thuto.bac.ac.bw" class="btn custom-btn">bida25-467@thuto.bac.ac.bw</a>.</p>
-          </div>
-          <div class="mt-4">
-            <h3>Send a Message</h3>
+          </section>
+
+          <aside class="col-md-7">
+            <div class="card p-4 contact-card">
+            <h2 class="text-white mb-4">feedback/contact form</h2>
 
             <form id="contact-form">
               <div class="mb-3">
@@ -60,7 +63,7 @@
                  <textarea class="form-control" id="message" name="message" rows="3" required placeholder="Write your message here......"></textarea>
                </div>
 
-               <button type="submit" class="btn btn-dark">Send</button>
+               <button type="submit" class="btn btn-dark w-100">Submit</button>
                <div id="error" class="alert alert-danger d-none">
                 PLEASE FILL IN ALL FIELDS!!!
                </div>
@@ -68,7 +71,8 @@
                 SUBMITED
                </div>
             </form>
-          </div> 
+            </div>
+          </aside> 
        </div>
     </main>
 
