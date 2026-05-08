@@ -43,7 +43,7 @@ if (contactForm) {
 window.addEventListener('scroll', function () {
     const btn = document.getElementById('backToTop');
     if (btn) {
-        if (window.scrolly > 300) {
+        if (window.scrollY > 300) {
             btn.style.display = 'block';
         }
         else {
