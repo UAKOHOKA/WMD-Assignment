@@ -28,7 +28,7 @@ if (contactForm) {
         const successMsg = document.getElementById('submited');
 
         errorMsg.classList.add('d-none');
-        successMsg.classList.remove('d-none');
+        successMsg.classList.add('d-none');
 
         if (name === '' || email === '' || message === '') {
             errorMsg.classList.remove('d-none');

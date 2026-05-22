@@ -15,7 +15,7 @@ body {
 }
 /* heading style*/
 h1, h2, h3 {
-    font-family: georgia, serif;
+    font-family: Georgia, serif;
 }
 .heading-herero {
     color: var(--herero-red);
@@ -23,7 +23,7 @@ h1, h2, h3 {
 
 /* Add small color and shadow transition to navbar */
 nav .nav-link {
-    font-size: 0.95;
+    font-size: 0.95em;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -183,5 +183,15 @@ tr:hover {
     border: none;
 }
 .contact-card .form-label {
+    color: white;
+}
+
+/* Quote section */
+.quote-section {
+    background-color: var(--herero-dark);
+    border-radius: 10px;
+}
+
+.quote-section p {
     color: white;
 }
