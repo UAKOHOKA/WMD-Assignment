@@ -1,4 +1,4 @@
-/* CSS VRIABLES */
+/* CSS VARIABLES */
 :root {
     --herero-red: #6b2d2d;
     --herero-dark: #4a1f14;
@@ -26,20 +26,23 @@ nav .nav-link {
     font-size: 0.95em;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
+} /* select all links with class nav-link inside nav */
+
 nav .nav-link.active {
     background-color: #6b2d2d;
     color: white !important;
     padding: 5px 10px;
-}
+} /* style the current active link */
+
 nav .nav-link:hover {
     background-color: rgba(107, 45, 45, 0.2);
     color: white !important;
-}
+} /* add a subtle background when moving over link */
+
 .navbar {
     /* horizontal | vertical | blur | color */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-}
+} /* Add a soft shadow to the navbar */
 
 /* Hero section box */
 .hero-section {
